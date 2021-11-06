@@ -43,3 +43,10 @@ button {
 #delete-btn {
     background: darkred;
 }
+
+#total-btn {
+    background: navy;
+}
+#myFunction{
+    background: green;
+}

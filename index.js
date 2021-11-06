@@ -1,6 +1,6 @@
 let countEl = document.getElementById("count-el")
 let saveEl = document.getElementById("save-el")
-
+let totalEl = document.getElementById("total-el")
 console.log(countEl)
 
 let count = 0
@@ -33,7 +33,22 @@ function save() {
         countEl.innerText = count
 }
 
-saveEl()
+function total() {
+  totalEl.innerText += " " + count + ", "
+
+        console.log(count)
+        count = 0
+        countEl.innerText = count
+}
+
+
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+
+}
+
+myFunction()
 //let username = "per"
 //let message = "You have tree new notifications"
 
